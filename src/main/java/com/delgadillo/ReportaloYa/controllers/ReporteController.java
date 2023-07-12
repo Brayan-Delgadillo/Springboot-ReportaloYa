@@ -33,7 +33,7 @@ public class ReporteController {
 	}
 	
 	@GetMapping(path = "/{id}")
-	public Optional<ReporteModel> obtenerUsuarioPorId(@PathVariable("id") Long id) {
+	public Optional<ReporteModel> obtenerReportePorId(@PathVariable("id") Long id) {
 		return this.reporteService.obtenerPorId(id);
 	}
 	

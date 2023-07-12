@@ -1,5 +1,8 @@
 package com.delgadillo.ReportaloYa.models;
 
+
+import java.util.Date;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -12,9 +15,11 @@ public class ReporteModel {
 	private long id;
 	private String nickname;
 	private String colegio;
+	private String nivel;
 	private String grado;
 	private String seccion;
 	private String descripcion;
+	private Date fecha_pub;
 	public long getId() {
 		return id;
 	}
@@ -33,6 +38,12 @@ public class ReporteModel {
 	public void setColegio(String colegio) {
 		this.colegio = colegio;
 	}
+	public String getNivel() {
+		return nivel;
+	}
+	public void setNivel(String nivel) {
+		this.nivel = nivel;
+	}
 	public String getGrado() {
 		return grado;
 	}
@@ -50,5 +61,11 @@ public class ReporteModel {
 	}
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+	public Date getFecha_pub() {
+		return fecha_pub;
+	}
+	public void setFecha_pub(Date fecha_pub) {
+		this.fecha_pub = fecha_pub;
 	}
 }
